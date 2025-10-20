@@ -1,28 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
 
 .body {
   color: white;
-  background-image: url(backround.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #222222;
   font-family: Poppins;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  background-color: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .imagelogo {
-  width: 220px;
-  height: 150px;
+  width: 180px;
+  height: 110px;
+  position: absolute;
+  left: 10px;
+}
+
+.contato {
+  color: gold;
+  display: block;
+  position: absolute;
+  right: 10px;
+  padding: 10px
+}
+
+.instrucoes {
+  width: 635px;
+  display: block;
+  margin: auto;
+
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
+  margin-top: 10px;
 }
 
 .paragrafo1 {
-  text-align: center;
+  color: gray;
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 div {
@@ -31,12 +59,14 @@ div {
 }
 
 .area {
-  border: #202020 2px solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #000000;
   background: linear-gradient(500deg, #000000, #101010, #202020);
-  width: 535px;
+  width: 635px;
   height: 550px;
-  justify-content: left;
+  justify-content: center;
   margin: auto;
+  padding-top: 50px;
 }
 
 .nome {
@@ -47,6 +77,7 @@ div {
 }
 
 .inputnome {
+  padding-left: 5px;
   background-color: #000000;
   color: gray;
   width: 500px;
@@ -63,6 +94,7 @@ div {
 }
 
 .inputemail {
+  padding-left: 5px;
   background-color: #000000;
   color: gray;
   width: 500px;
@@ -80,6 +112,7 @@ div {
 }
 
 .inputtelefone {
+  padding-left: 5px;
   background-color: #000000;
   color: gray;
   width: 500px;
@@ -96,6 +129,7 @@ div {
 }
 
 .inputservico {
+  padding-left: 5px;
   background-color: #000000;
   color: gray;
   width: 508px;
@@ -113,6 +147,8 @@ div {
 }
 
 .areadetext {
+  padding-left: 5px;
+  font-family: Poppins;
   background-color: #000000;
   resize: none;
   width: 500px;

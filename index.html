@@ -10,81 +10,81 @@
 
 <body class="body">
   <header>
+    <div class="menu">
+      <img src="assets/img/iconemenu.png" alt="ícone menu">
+    </div>
+
     <div class="imagelogo">
       <img src="assets/img/img1.png" alt="Logo" />
     </div>
 
-    <div class="contato">
-      <p>www.cyberdome.com</p>
-      <p>info@cyberdome.com</p>
-      <p>(11)9292-2328</p>
+    <div class="imagenotifica">
+      <img src="assets/img/iconenotificacao.png" alt="ícone notificação">
     </div>
   </header>
 
-  <section class="instrucoes">
-    <h1>Solicitação de serviço</h1>
-    <p class="paragrafo1">
-      <em>Por favor, preencha o formulário e sua solicitação será recebida!</em>
-    </p>
-  </section>
+  <main>
+    <section class="instrucoes">
+      <h1>Solicitação de serviço</h1>
+      <p class="paragrafo1">
+        Por favor, preencha o formulário e sua solicitação será recebida!
+      </p>
+    </section>
 
-  <section>
-    <div class="area">
-      <form action="#" method="post">
-        <!--Nome-->
-        <div class="nome">
-          <label for="name">Nome do solicitante</label><br />
-          <input class="inputnome" type="text" id="nome" name="name" placeholder="Nome completo" required />
-        </div>
-
-        <!--E-mail-->
-        <div class="email">
-          <label for="email">E-mail </label><br />
-          <input class="inputemail" type="email" id="email" name="email" placeholder="E-mail" required /><br />
-        </div>
-        <div class="telefone">
-          <!--Numero-->
-          <label for="contato"> Telefone </label><br />
-          <input class="inputtelefone" type="tel" id="contato" name="tel" placeholder="Número de telefone" required />
-        </div>
-
-        <!--Tipo de serviço-->
-        <div class="servico">
-          <label for="opcoes"> Tipo de serviço </label><br />
-          <select class="inputservico" id="opcoes" required>
-            <option selected disabled value="">Selecione</option>
-            <option value="antivirus">Antivirus</option>
-            <option value="criptografia">Criptografia</option>
-            <option value="vdedados">Verificação de integridade</option>
-            <option value="Pcompleta">Proteção completa</option>
-          </select>
-        </div>
-
-        <!--Descriçao-->
-        <div class="descricao">
-          <label for="descricao">Descrição da solicitação</label><br />
-          <textarea class="areadetext" name="descricao" id="texto" placeholder="Necessário criptografia"
-            required></textarea>
-        </div>
-
-        <div class="cateoria">
-          <label for="opcateoria"> Categoria</label><br />
-          <select class="inputcateoria" id="opcateoria" required>
-            <option selected disabled value="">Selecione</option>
-            <option value="emergencia">Emergência</option>
-            <option value="urgente">Urgente</option>
-            <option value="poucourente">Pouco urgente</option>
-            <option value="nugrente">Não urgente</option>
-          </select>
-        </div>
-
-        <div class="inputenviar">
-          <input class="enviar" type="submit" value="Enviar" />
-        </div>
-      </form>
-    </div>
-  </section>
-  <footer></footer>
+    <section>
+      <div class="area">
+        <form action="#" method="post">
+          <!--Nome-->
+          <div class="nome">
+            <label for="name">Nome do solicitante</label><br />
+            <input class="inputnome" type="text" id="nome" name="name" placeholder="Nome completo" required />
+          </div>
+          <!--E-mail-->
+          <div class="email">
+            <label for="email">E-mail </label><br />
+            <input class="inputemail" type="email" id="email" name="email" placeholder="E-mail" required /><br />
+          </div>
+          <div class="telefone">
+            <!--Numero-->
+            <label for="contato"> Telefone </label><br />
+            <input class="inputtelefone" type="tel" id="contato" name="tel" placeholder="Número de telefone" required />
+          </div>
+          <!--Tipo de serviço-->
+          <div class="servico">
+            <label for="opcoes"> Tipo de serviço </label><br />
+            <select class="inputservico" id="opcoes" required>
+              <option selected disabled value="">Selecione</option>
+              <option value="antivirus">Antivirus</option>
+              <option value="criptografia">Criptografia</option>
+              <option value="vdedados">Verificação de integridade</option>
+              <option value="Pcompleta">Proteção completa</option>
+            </select>
+          </div>
+          <!--Descriçao-->
+          <div class="descricao">
+            <label for="descricao">Descrição da solicitação</label><br />
+            <textarea class="areadetext" name="descricao" id="texto" placeholder="Necessário criptografia"
+              required></textarea>
+          </div>
+          <div class="categoria">
+            <label for="opcateoria"> Categoria</label><br />
+            <select class="inputcateoria" id="opcateoria" required>
+              <option selected disabled value="">Selecione</option>
+              <option value="emergencia">Emergência</option>
+              <option value="urgente">Urgente</option>
+              <option value="poucourente">Pouco urgente</option>
+              <option value="nugrente">Não urgente</option>
+            </select>
+          </div>
+          <div class="enviarlimpar">
+            <input class="limpar" type="reset" value="Limpar">
+            <input class="enviar" type="submit" value="Enviar">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>&COPY; CyberDome - 2025</footer>
 </body>
 
 </html>

@@ -7,50 +7,66 @@
 
 .body {
   color: white;
-  background-color: #222222;
+  background-color: rgb(32, 32, 32);
   font-family: Poppins;
+  background: linear-gradient(500deg, #000000, #101010, #202020);
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
   background-color: #000000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.425);
+  border: #202020 1px solid;
+}
+
+.menu {
+  position: absolute;
+  left: 20px;
 }
 
 .imagelogo {
-  width: 180px;
-  height: 110px;
+  width: 150px;
+  height: 80px;
   position: absolute;
-  left: 10px;
+  left: 50px;
 }
 
-.contato {
-  color: gold;
-  display: block;
+.imagenotifica {
   position: absolute;
-  right: 10px;
-  padding: 10px
+  right: 20px;
 }
 
 .instrucoes {
-  width: 635px;
-  display: block;
-  margin: auto;
-
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
 h1 {
-  margin-top: 10px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #f1c40f;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  /*mesma logica box shadow*/
 }
 
 .paragrafo1 {
-  color: gray;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #ccc;
+  font-weight: 400;
+  margin-top: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
 div {
@@ -58,10 +74,14 @@ div {
   justify-content: center;
 }
 
+main {
+  margin-top: 100px;
+}
+
 .area {
   border-radius: 10px;
+  background-color: #101010;
   box-shadow: 5px 5px 10px #000000;
-  background: linear-gradient(500deg, #000000, #101010, #202020);
   width: 635px;
   height: 550px;
   justify-content: center;
@@ -69,87 +89,55 @@ div {
   padding-top: 50px;
 }
 
-.nome {
+.nome,
+.email,
+.telefone,
+.servico,
+.descricao,
+.categoria {
   color: gold;
   margin: 15px;
   display: block;
   font-size: large;
 }
 
-.inputnome {
-  padding-left: 5px;
-  background-color: #000000;
-  color: gray;
-  width: 500px;
-  height: 25px;
-  font-size: 15px;
-  font-family: Poppins;
-}
-
-.email {
-  color: gold;
-  display: block;
-  margin: 15px;
-  font-size: large;
-}
-
-.inputemail {
-  padding-left: 5px;
-  background-color: #000000;
-  color: gray;
-  width: 500px;
-  height: 25px;
-  font-size: 15px;
-  font-family: Poppins;
-}
-
-.telefone {
-  margin-left: 10px;
-  color: gold;
-  display: block;
-  margin: 15px;
-  font-size: large;
-}
-
+.inputnome,
+.inputemail,
 .inputtelefone {
   padding-left: 5px;
   background-color: #000000;
   color: gray;
+  border: gray 1px solid;
+  border-radius: 5px;
   width: 500px;
   height: 25px;
   font-size: 15px;
   font-family: Poppins;
 }
 
-.servico {
-  color: gold;
-  display: block;
-  margin: 15px;
-  font-size: large;
-}
-
-.inputservico {
+.inputservico,
+.inputcateoria {
   padding-left: 5px;
   background-color: #000000;
   color: gray;
+  border-radius: 5px;
   width: 508px;
   height: 30px;
   font-size: 15px;
+  cursor: pointer;
   font-family: Poppins;
 }
 
-.descricao {
-  display: block;
-  margin: 15px;
-  color: gold;
-  font-size: large;
-  font-family: Poppins;
+input:focus {
+  border-color: white;
+  outline: none;
 }
 
 .areadetext {
   padding-left: 5px;
   font-family: Poppins;
   background-color: #000000;
+  border-radius: 5px;
   resize: none;
   width: 500px;
   height: 70px;
@@ -157,30 +145,45 @@ div {
   font-size: 15px;
 }
 
-.cateoria {
+.enviarlimpar {
+  justify-content: center;
+  gap: 275px;
+}
+
+.enviar,
+.limpar {
+  background-color: transparent;
   color: gold;
-  margin: 15px;
-  display: block;
-  font-size: large;
-}
-
-.inputcateoria {
-  background-color: #000000;
-  color: gray;
-  width: 508px;
-  height: 30px;
-  font-size: 15px;
-  font-family: Poppins;
-}
-
-.enviar {
-  background-color: gold;
-  color: black;
+  border: gold 1px solid;
+  border-radius: 5px;
   width: 100px;
   margin: 15px;
   font-family: Poppins;
 }
 
-.inputenviar {
-  justify-content: right;
+.enviar:hover {
+  background-color: green;
+  color: white;
+  border-color: black;
+  cursor: pointer;
+}
+
+.enviar:active {
+  background-color: rgb(0, 95, 0);
+}
+
+.limpar:hover {
+  background-color: red;
+  border-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.limpar:active {
+  background-color: rgb(179, 2, 2);
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
 }
